@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="static/style.css">
+    <meta charset="UTF-8">
+	<title>Tubes Cloud</title>
+</head>
+<body>
+	<div class="Head">
+		<h1>Horse Survival Classification App</h1>
+	</div>
+
+	<div class="Image">
+		<img src="{{ url_for('static', filename=image) }}" width="300" height="300" />
+	</div>
+
+	<div class="Form">
+		<form action="http://127.0.0.1:5000" method="POST">
+
+			<h4 class="Feature_Head">Features</h4>
+			<p class="Note">Note :- value between 0 and 1!</p>
+			<p class="Feature_Name">Surgery :</p>
+			<!-- <br> -->
+			<input type="text" name="Surgery">
+
+			<p class="Feature_Name">Age:</p>
+			<!-- <br> -->
+			<input type="text" name="Age">
+			
+			<p class="Note">Note :- you can add random value !</p>
+			<p class="Feature_Name">Hospital Number:</p>
+			<!-- <br> -->
+			<input type="text" name="Hospital Number">
+
+			<p class="Feature_Name">Rectal Temperature:</p>
+			<!-- <br> -->
+			<input type="text" name="Rectal_Temp">
+
+			<p class="Feature_Name">Pulse:</p>
+			<!-- <br> -->
+			<input type="text" name="Pulse">
+
+			<p class="Feature_Name">Respiratory Rate:</p>
+			<!-- <br> -->
+			<input type="text" name="Respiratory_Rate">
+
+			<p class="Feature_Name">Temp of Extremities:</p>
+			<!-- <br> -->
+			<input type="text" name="temp_of_extremities">
+
+			<p class="Feature_Name">Peripheral Pulse:</p>
+			<!-- <br> -->
+			<input type="text" name="peripheral_pulse">
+
+			<p class="Feature_Name">Mucous Membrane:</p>
+			<!-- <br> -->
+			<input type="text" name="mucous_membrane">
+
+			<p class="Feature_Name">Capillary Refill Time:</p>
+			<!-- <br> -->
+			<input type="text" name="capillary_refill_time">
+
+			<p class="Feature_Name">Pain:</p>
+			<!-- <br> -->
+			<input type="text" name="pain">
+
+			<p class="Feature_Name">Peristalsis:</p>
+			<!-- <br> -->
+			<input type="text" name="peristalsis">
+
+			<p class="Feature_Name">Abdominal Distention:</p>
+			<!-- <br> -->
+			<input type="text" name="abdominal_distention">\
+
+			<p class="Feature_Name">Nasogastric Tube:</p>
+			<!-- <br> -->
+			<input type="text" name="nasogastric_tube">
+
+			<p class="Feature_Name">Nasogastric Reflux pH:</p>
+			<!-- <br> -->
+			<input type="text" name="nasogastric_reflux_ph">
+
+			<p class="Feature_Name">Rectal Exam Feces:</p>
+			<!-- <br> -->
+			<input type="text" name="rectal_exam_feces">
+
+			<p class="Feature_Name">Abdomen:</p>
+			<!-- <br> -->
+			<input type="text" name="abdomen">
+
+			<p class="Feature_Name">Packed Cell Volume:</p>
+			<!-- <br> -->
+			<input type="text" name="packed_cell_volume">
+
+			<p class="Feature_Name">Total Protein:</p>
+			<!-- <br> -->
+			<input type="text" name="total_protein">
+
+			<p class="Feature_Name">Abdomo Appearance:</p>
+			<!-- <br> -->
+			<input type="text" name="abdomo_apperance">
+
+			<p class="Feature_Name">Abdomo Protein:</p>
+			<!-- <br> -->
+			<input type="text" name="abdomo_protein">
+
+			<p class="Feature_Name">Surgical Lesion:</p>
+			<!-- <br> -->
+			<input type="text" name="surgical_lesion">
+
+			<p class="Feature_Name">Lesion 1:</p>
+			<!-- <br> -->
+			<input type="text" name="lesion_1">
+
+			<p class="Feature_Name">Lesion 2:</p>
+			<!-- <br> -->
+			<input type="text" name="lesion_2">
+
+			<p class="Feature_Name">Lesion 3:</p>
+			<!-- <br> -->
+			<input type="text" name="lesion_3">
+
+
+			<p class="Feature_Name">Lesion 4:</p>
+			<!-- <br> -->
+			<input type="text" name="lesion_4">
+
+			<p class="Feature_Name">CP Data:</p>
+			<!-- <br> -->
+			<input type="text" name="cp_data">
+
+
+			<br>
+
+			<div class="Button">
+				<input type="submit" value="Click Here To Classify">
+			</div>
+		</form>
+	</div>
+
+	
+
+	<div class="Result">
+		{{ result }}
+	</div>
+	
+</body>
+</html>
